@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7e3826e3;
+    text-align: center; 
+    z-index: 2;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center; 
+    list-style-type: none; 
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px; 
+  }
+  
+  nav ul li a {
+    text-decoration: none; 
+    color: #f0f0f0; 
+  }
+
+
+header {
+    width: 100%;
+    background-color: #7e3826e3; 
+    color: white;
+    text-align: center;
+  }
+  
+  .banner {
+    width: 100%;
+    max-width: 100%; 
+  }
+
+  .banner img {
+    width: 100%;
+    height: 445px;
+  }
+
+  h1{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+  }
+  
+  .title h2{
+    text-align: center;
+    padding: 30px;
+  }
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    max-height: 30%;
+  }
+  
+  .card {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  
+  .card:hover{
+    transform:  scale(0.9);
+    transition: all 0.60s;
+  }
+  
+  .card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card .btn{
+    border: none;
+    color: #07689c;
+    cursor: pointer;
+  }
+
+  .card .btn:hover{
+    color: #7e3826e3;
+
+  }
+  
+
+  footer {
+    background-color: #7e3826e3;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /
+  }
+  
+  .containerFooter {
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+
+
+
+
+  @media screen and (min-width: 1025px) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; 
+      
+    }
+  
+    .card {
+      width: calc(33.33% - 20px); 
+      margin-bottom: 20px; 
+      
+    }
+
+    
+  }
+
+  @media screen and (min-width: 600px) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; 
+      padding: 0 20px; 
+    }
+  
+    .card {
+      width: calc(33.33% - 20px); 
+      margin-bottom: 20px; 
+      box-sizing: border-box; 
+    }
+
+    h1{
+      top:35%;
+      left:25%;
+    }
+  }
+  
+  
